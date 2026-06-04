@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learning Dashboard
 
-## Getting Started
+## Overview
+A modern learning dashboard built using Next.js, TypeScript, Tailwind CSS, and Supabase.
 
-First, run the development server:
+## Features
+- Dashboard layout with sidebar navigation
+- Course progress cards
+- Activity section
+- Responsive UI
+- Supabase integration for course data
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Architecture
+- Next.js App Router
+- Reusable React components
+- Tailwind CSS for styling
+- Supabase as backend database
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Server / Client Component Split
+- Page layout is handled using Next.js App Router.
+- UI is divided into reusable components such as Sidebar, HeroTile, CourseCard, and ActivityTile.
+- Data can be fetched from Supabase and rendered through components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Challenges Faced
+- Setting up Supabase environment variables
+- GitHub and Vercel deployment configuration
+- Component structure and build error resolution
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Supabase
+- Vercel
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
