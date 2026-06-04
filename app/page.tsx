@@ -13,10 +13,10 @@ export default function Home() {
           <HeroTile />
 
           <div className="grid md:grid-cols-2 gap-4">
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+           <CourseCard title="Advanced React Patterns" progress={75} />
+<CourseCard title="UI Animation Mastery" progress={60} />
+<CourseCard title="Database Design" progress={45} />
+<CourseCard title="Next.js Server Components" progress={85} />
           </div>
 
           <ActivityTile />
